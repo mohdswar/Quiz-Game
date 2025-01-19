@@ -14,7 +14,7 @@ const questions = [
         question: "What is 5 + 3?",
         choices: ["5", "8", "10", "7"],
         correctAnswer: 1
-    }
+    },
     {
         question: "What is 5 + 3?",
         choices: ["5", "8", "10", "7"],
@@ -36,29 +36,21 @@ const quizContainer = document.querySelector(".quiz");
 
 /*-------------- Functions -------------*/
 
-function startQuiz() {
-    quizContainer.classList.remove("hide");
-    setNextQuestion();
-}
-
-function setNextQuestion() {
-
+function startGame() {
     showQuestion(questions[currentQuestionIndex]);
 }
 
 function showQuestion(question) {
-    questionElement.innerText = question.question;
+    questionElement.textContent = question.question;
+    answerButtonsElement.innerHTML = '';
     question.choices.forEach((choice, index) => {
         const button = document.createElement("button");
-        button.innerText = choice;
+        button.textContent = choice;
         button.classList.add("btn");
-        button.addEventListener("click", selectAnswer);
-        answerButtonsElement.appendChild(button);
+
     });
 }
-/*----------- Event Listeners ----------*/
 
-nextButtonElement.addEventListener("click", () => {
-    currentQuestionIndex++;
-    setNextQuestion();
-});
+
+
+/*----------- Event Listeners ----------*/
