@@ -42,8 +42,14 @@
     cursor: pointer;
 }
 
+.btn:focus {
+    outline: none;
+    border: 2px solid black;
+
+}
+
 .btn:hover {
-    background-color: green;
+
     color: white;
 }
 
@@ -55,4 +61,8 @@
     border-radius: 4px;
     cursor: pointer;
     width: 150px;
+}
+
+#next-btn:hover {
+    background-color: purple;
 }

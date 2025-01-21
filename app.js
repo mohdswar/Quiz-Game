@@ -49,12 +49,13 @@ const playBackgroundMusic = () => {
 };
 const handleReaction = (event) => {
     const selectedAnswer = event.target.textContent;
-
     const correctAnswer = questions[currentQuestionIndex].choices[questions[currentQuestionIndex].correctAnswer];
     if (selectedAnswer === correctAnswer) {
         score++;
     }
+
 };
+
 
 const showQuestion = () => {
 
@@ -64,7 +65,7 @@ const showQuestion = () => {
     questionElement.textContent = questions[currentQuestionIndex].question;
     for (let i = 0; i < questions[currentQuestionIndex].choices.length; i++) {
         const button = document.createElement("button");
-
+        button.classList.add("btn");
         button.textContent = questions[currentQuestionIndex].choices[i];
         answerButtonsElement.appendChild(button);
     }
