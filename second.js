@@ -24,17 +24,13 @@ const questions = [
 
 ];
 
-
 const backgroundMusic = new Audio('./assets/Millionare.mp3');
 backgroundMusic.loop = true;
+backgroundMusic.volume = 0.5;
 const stopBackgroundMusic = () => {
     backgroundMusic.pause();
     backgroundMusic.currentTime = 0;
 }
-
-const playBackgroundMusic = () => {
-    backgroundMusic.play();
-};
 /*---------- Variables (state) ---------*/
 let currentQuestionIndex = 0;
 let score = 0;
@@ -47,16 +43,13 @@ const resultEl = document.querySelector(".quiz");
 const btnEl = document.querySelectorAll(".btn");
 /*-------------- Functions -------------*/
 
-
-
-const handleReaction = (event) => {
-    const selectedAnswer = event.target.textContent;
-    const correctAnswer = questions[currentQuestionIndex].choices[questions[currentQuestionIndex].correctAnswer];
-    if (selectedAnswer === correctAnswer) {
-        score++;
-    }
+const playBackgroundMusic = () => {
+    backgroundMusic.play();
 };
 
+const handleReaction = (event) => {
+    selectedAnswer = event.target.textContent;
+};
 
 const showQuestion = () => {
 
@@ -81,6 +74,12 @@ const showQuestion = () => {
 };
 
 const nextQuestion = () => {
+
+    const correctAnswer = questions[currentQuestionIndex].choices[questions[currentQuestionIndex].correctAnswer];
+    if (selectedAnswer === correctAnswer) {
+        score++;
+    }
+
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
         showQuestion();

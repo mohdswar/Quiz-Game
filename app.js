@@ -48,13 +48,8 @@ const playBackgroundMusic = () => {
 };
 
 const handleReaction = (event) => {
-    const selectedAnswer = event.target.textContent;
-    const correctAnswer = questions[currentQuestionIndex].choices[questions[currentQuestionIndex].correctAnswer];
-    if (selectedAnswer === correctAnswer) {
-        score++;
-    }
+    selectedAnswer = event.target.textContent;
 };
-
 
 const showQuestion = () => {
 
@@ -79,6 +74,12 @@ const showQuestion = () => {
 };
 
 const nextQuestion = () => {
+
+    const correctAnswer = questions[currentQuestionIndex].choices[questions[currentQuestionIndex].correctAnswer];
+    if (selectedAnswer === correctAnswer) {
+        score++;
+    }
+
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
         showQuestion();
