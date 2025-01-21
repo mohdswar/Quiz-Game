@@ -20,7 +20,17 @@ const questions = [
         choices: ["87524", "535451", "985", "1000"],
         correctAnswer: 1
     }
+
+
 ];
+
+const backgroundMusic = new Audio('./assets/Millionare.mp3');
+backgroundMusic.loop = true;
+backgroundMusic.volume = 0.5;
+const stopBackgroundMusic = () => {
+    backgroundMusic.pause();
+    backgroundMusic.currentTime = 0;
+}
 
 /*---------- Variables (state) ---------*/
 let currentQuestionIndex = 0;
@@ -33,21 +43,28 @@ const nextButtonElement = document.querySelector("#next-btn");
 const resultEl = document.querySelector(".quiz");
 /*-------------- Functions -------------*/
 
+
+const playBackgroundMusic = () => {
+    backgroundMusic.play();
+};
 const handleReaction = (event) => {
     const selectedAnswer = event.target.textContent;
 
-    const correctAnswer = questions[currentQuestionIndex].correctAnswer;
+    const correctAnswer = questions[currentQuestionIndex].choices[questions[currentQuestionIndex].correctAnswer];
     if (selectedAnswer === correctAnswer) {
         score++;
     }
 };
 
 const showQuestion = () => {
-    
+
+    playBackgroundMusic();
+
     answerButtonsElement.innerHTML = "";
     questionElement.textContent = questions[currentQuestionIndex].question;
     for (let i = 0; i < questions[currentQuestionIndex].choices.length; i++) {
         const button = document.createElement("button");
+
         button.textContent = questions[currentQuestionIndex].choices[i];
         answerButtonsElement.appendChild(button);
     }
@@ -64,13 +81,13 @@ const nextQuestion = () => {
 };
 
 const showResults = () => {
+    stopBackgroundMusic();
     resultEl.innerHTML = `Your Score: ${score}/4
     <button onclick="location.reload()">Restart Quiz</button>`
 };
 
 
 showQuestion();
-
 
 
 /*----------- Event Listeners ----------*/
