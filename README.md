@@ -1,5 +1,5 @@
 # Quiz-Game
- Quiz Game
+ 
  Quiz Game is a simple interactive quiz application built using HTML, CSS, and JavaScript. It features a dynamic question-and-answer format with score tracking and background music.
 
 Features
