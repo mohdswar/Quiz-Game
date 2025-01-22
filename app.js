@@ -1,26 +1,25 @@
 // /*-------------- Constants -------------*/
 const questions = [
     {
-        question: "Who's the best one in the town?",
-        choices: ["idk", "Wrong", "mohd", "noone"],
+        question: "In which year did Bahrain first host the Formula 1 race?",
+        choices: ["2004", "2005", "2007", "2010"],
+        correctAnswer: 1
+    },
+    {
+        question: "Which year was the Bahrain World Trade Center completed?",
+        choices: ["2000", "2004", "2008", "2011"],
         correctAnswer: 2
     },
     {
-        question: "Is Mohammed the best?",
-        choices: ["yes", "hah?", "ofc", "no"],
+        question: "Which is the oldest fort in Bahrain?",
+        choices: ["Qal'at al-Bahrain", "Riffa Fort", "Arad Fort", "Fort of Bahrain"],
         correctAnswer: 0
     },
     {
-        question: "Mohammed is the greatest?",
-        choices: ["no", "yeea", "idk", "not sure"],
-        correctAnswer: 1
-    },
-    {
-        question: "What is Mohammed's car plate?",
-        choices: ["87524", "535451", "985", "1000"],
-        correctAnswer: 1
+        question: "What is the largest island in Bahrain?",
+        choices: ["Hawar Islands", "Sitra", "Muharraq", "Amwaj Islands"],
+        correctAnswer: 0
     }
-
 
 ];
 
