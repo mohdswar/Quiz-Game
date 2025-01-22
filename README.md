@@ -40,9 +40,9 @@ Features
 - JavaScript
 - Bootstrap
 
-##Test the game
+## Test the game
 use the link to test deployed game
-https://mohdswar.github.io/Quiz-Game/
+[Quiz Game](https://mohdswar.github.io/Quiz-Game/)
 
 ## Author
 
