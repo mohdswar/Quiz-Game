@@ -1,27 +1,25 @@
 // /*-------------- Constants -------------*/
 const questions = [
     {
-        question: "dose Mohammed is a millionare?",
-        choices: ["idk", "Wrong", "yes", "noone"],
-        correctAnswer: 2
-    },
-    {
-        question: "Mohammed have a rolls roys?",
-        choices: ["ofc", "hah?", "none frome above", "no"],
+        question: "What will the following code return: '5' + 5?",
+        choices: ["55", "10", "15", "undefined"],
         correctAnswer: 0
     },
     {
-        question: "dose mohammed have a private jet?",
-        choices: ["no", "yeea", "idk", "not sure"],
+        question: "What will the following code output: 'console.log(!!null)'?",
+        choices: ["true", "false", "undefined", "NaN"],
         correctAnswer: 1
     },
     {
-        question: "how much money in mohammeds bank",
-        choices: ["8752", "+9999999", "985", "1000"],
-        correctAnswer: 1
+        question: "Which of the following is NOT a falsy value in JavaScript?",
+        choices: ["false", "0", "NaN", "[]"],
+        correctAnswer: 3
+    },
+    {
+        question: "What is the difference between '==' and '===' in JavaScript?",
+        choices: ["'==' compares values only, '===' compares both value and type", "'==' is for strict comparison", "'===' is for abstract comparison", "'==' is used for objects and '===' for primitives"],
+        correctAnswer: 0
     }
-
-
 ];
 
 
