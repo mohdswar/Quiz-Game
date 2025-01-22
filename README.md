@@ -23,13 +23,15 @@ Features
 
 ## Screenshots
 
-### Personal Quiz
+### Bahrain National Quiz
 
-![Personal Quiz](https://github.com/user-attachments/assets/c3cf0d32-5c01-4df2-a777-9cf9b9e66ab3)
+![Bahrain National Quiz](https://github.com/user-attachments/assets/07eeff56-6cc3-4001-98cd-58b9154b7e79)
+
 
 ### Quiz Results
 
-![Quiz Results](https://github.com/user-attachments/assets/6ff7d3dd-1e44-4aff-9d85-7c63bfdf19e5)
+![Quiz Results](https://github.com/user-attachments/assets/414c4f92-5c24-432b-8256-7bb421cf8ec6)
+
 
 ## Technologies Used
 
