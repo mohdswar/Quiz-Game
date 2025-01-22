@@ -63,11 +63,6 @@ const showQuestion = () => {
 
         answerButtonsElement.appendChild(button);
 
-        // const button = document.createElement("button");
-        // button.classList.add("btn");
-        // button.textContent = questions[currentQuestionIndex].choices[i];
-        // answerButtonsElement.appendChild(button);
-
 
     }
 

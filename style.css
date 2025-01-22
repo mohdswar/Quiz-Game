@@ -4,65 +4,116 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-link {
+    color: #007bff;
+    font-weight: normal;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #0056b3;
+}
 
 
 .app {
-    background: white;
+    background: #ffffff;
     width: 90%;
     max-width: 600px;
-    margin: 100px auto 0;
+    margin: 80px auto 20px;
     border-radius: 10px;
-    padding: 30px;
-
+    padding: 20px;
+    border: 1px solid #ddd;
 }
 
 .app h1 {
-    border-bottom: 1px solid black;
-    padding: bottom 30px;
-
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
 }
 
 .quiz {
-    padding: 20px 0;
+    padding: 15px 0;
+    text-align: center;
 }
 
 .quiz h2 {
     font-size: 18px;
-    color: black;
+    color: #444;
+    margin-bottom: 15px;
 }
+
 
 #answer-buttons {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 10px;
 }
 
 .btn {
-    margin: 5px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
 }
 
 .btn:focus {
     outline: none;
-    border: 2px solid black;
-
-}
-
-.btn:hover {
-
-    color: white;
+    border: 1px solid #0056b3;
 }
 
 #next-btn {
-    background-color: plum;
+    background-color: #28a745;
+    color: white;
     border: 0;
-    padding: 10px;
+    padding: 10px 15px;
     margin: 20px auto 0;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    width: 150px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.2s;
 }
 
 #next-btn:hover {
-    background-color: purple;
+    background-color: #218838;
 }
