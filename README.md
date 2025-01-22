@@ -40,10 +40,15 @@ Features
 - JavaScript
 - Bootstrap
 
+  
+## here is the user stories and etc..
+[trello link](https://trello.com/b/zCH2cifW)
+
+
 ## Test the game
 use the link to test deployed game
 [Quiz Game](https://mohdswar.github.io/Quiz-Game/)
-
+https://trello.com/b/zCH2cifW
 ## Author
 
 - Mohammed
