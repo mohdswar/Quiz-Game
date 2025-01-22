@@ -24,6 +24,7 @@ const questions = [
 
 ];
 
+
 const backgroundMusic = new Audio('./assets/Millionare.mp3');
 backgroundMusic.loop = true;
 backgroundMusic.volume = 0.5;
@@ -31,6 +32,18 @@ const stopBackgroundMusic = () => {
     backgroundMusic.pause();
     backgroundMusic.currentTime = 0;
 }
+
+
+const winMusic = new Audio('./assets/win.mp3');
+winMusic.loop = true;
+winMusic.volume = 0.5;
+
+const stopWinMusic = () => {
+    winMusic.pause();
+    winMusic.currentTime = 0;
+}
+
+
 /*---------- Variables (state) ---------*/
 let currentQuestionIndex = 0;
 let score = 0;
@@ -45,6 +58,10 @@ const btnEl = document.querySelectorAll(".btn");
 
 const playBackgroundMusic = () => {
     backgroundMusic.play();
+};
+
+const playWinMusic = () => {
+    winMusic.play();
 };
 
 const handleReaction = (event) => {
@@ -62,6 +79,7 @@ const showQuestion = () => {
         const button = btnEl[i];
 
         answerButtonsElement.appendChild(button);
+
 
     }
 
@@ -84,6 +102,7 @@ const nextQuestion = () => {
 
 const showResults = () => {
     stopBackgroundMusic();
+    playWinMusic();
     resultEl.innerHTML = `Your Score: ${score}/4
     <button onclick="location.reload()">Restart Quiz</button>`
 };
@@ -95,6 +114,4 @@ showQuestion();
 /*----------- Event Listeners ----------*/
 answerButtonsElement.addEventListener("click", handleReaction)
 nextButtonElement.addEventListener("click", nextQuestion);
-
-
 
