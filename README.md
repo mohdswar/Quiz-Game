@@ -10,12 +10,39 @@ Features
 - Styled using Bootstrap and custom CSS for a responsive layout.
 - you have 2 version of quizes choose what you want from the top right
 
-![image](https://github.com/user-attachments/assets/c3cf0d32-5c01-4df2-a777-9cf9b9e66ab3)
+
+## How to Play
+
+1. **Start the Quiz**: Open `index.html` in your web browser to start the Personal Quiz or `secondary.html` for the Secondary Quiz.
+2. **Answer Questions**: Read each question and click on the button corresponding to your answer choice.
+3. **Next Question**: After selecting an answer, click the "Next" button to proceed to the next question.
+4. **View Score**: At the end of the quiz, your score will be displayed along with an option to restart the quiz.
+5. **Restart Quiz**: Click the "Restart Quiz" button to retake the quiz from the beginning.
 
 
-also we can see here a result view and restart button
+
+## Screenshots
+
+### Bahrain National Quiz
+
+![Bahrain National Quiz](https://github.com/user-attachments/assets/07eeff56-6cc3-4001-98cd-58b9154b7e79)
 
 
-![image](https://github.com/user-attachments/assets/6ff7d3dd-1e44-4aff-9d85-7c63bfdf19e5)
+### Quiz Results
+
+![Quiz Results](https://github.com/user-attachments/assets/414c4f92-5c24-432b-8256-7bb421cf8ec6)
 
 
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+
+
+## Author
+
+- Mohammed
+
+Feel free to contribute to this project by submitting issues or pull requests.
