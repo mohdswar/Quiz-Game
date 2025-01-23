@@ -101,8 +101,11 @@ const nextQuestion = () => {
 const showResults = () => {
     stopBackgroundMusic();
     playWinMusic();
-    resultEl.innerHTML = `Your Score: ${score}/4
-    <button onclick="location.reload()">Restart Quiz</button>`
+    resultEl.innerHTML = `
+        <div style="text-align: center; font-size: 24px; margin-top: 20px;">
+            Your Score: ${score}/4
+            <button style="display: block; margin: 20px auto; padding: 10px 20px; font-size: 16px; cursor: pointer;" onclick="location.reload()">Restart Quiz</button>
+        </div>`;
 };
 
 
