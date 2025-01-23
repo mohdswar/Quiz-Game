@@ -12,7 +12,7 @@ const questions = [
     },
     {
         question: "Which is the oldest fort in Bahrain?",
-        choices: ["Qal'at al-Bahrain", "Riffa Fort", "Arad Fort", "Fort of Bahrain"],
+        choices: ["Qal'at al-Bahrain", "Riffa Fort", "Arad Fort", "Bo maher fort"],
         correctAnswer: 0
     },
     {
